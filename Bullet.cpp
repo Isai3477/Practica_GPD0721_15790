@@ -4,13 +4,13 @@
 
 void Bullet::Init(int _x, int _y)
 {
-	x = _x;
-	y = _y;
+	position.x = _x;
+	position.y = _y;
 	img.Load("Bala.png");
 }
 
 void Bullet::Draw()
 {
 	Window* window = Window::GetPtr();
-	window->RenderTexture(&img, x, y);
+	window->RenderTexture(&img, position.x, position.y);
 }

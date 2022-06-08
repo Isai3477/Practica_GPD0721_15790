@@ -1,9 +1,8 @@
 #pragma once
-
+#include "Vector2.h"
 class GameObject
 {
 public:
-	float x;
-	float y;
+	Vector2 position;
 };
 
