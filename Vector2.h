@@ -15,7 +15,10 @@ public:
     Vector2 operator+(Vector2 a);
     Vector2 operator-(Vector2 a);
     Vector2 operator*(float a);
+    float operator*(Vector2 b2);
     float Norm();
     Vector2 Unit();
+    Vector2();
+    Vector2(float x, float y);
 };
 
