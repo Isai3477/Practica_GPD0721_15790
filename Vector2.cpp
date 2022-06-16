@@ -44,13 +44,6 @@ Vector2 Vector2::operator*(float a)
     return mult;
 }
 
-float Vector2::operator*(Vector2 b2)
-{
-    float  mult;
-    mult = x * b2.x + y * b2.y;
-    return mult;
-}
-
 float Vector2::Norm()
 {
     return sqrt((x * x) + (y * y));
@@ -62,17 +55,5 @@ Vector2 Vector2::Unit()
     unit.SetX(x/Norm());
     unit.SetY(y/Norm());
     return unit;
-}
-
-Vector2::Vector2() 
-{
-    x = 0;
-    y = 0;
-}
-
-Vector2::Vector2(float x, float y) 
-{
-    this->x = x;
-    this->y = y;
 }
 

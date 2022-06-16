@@ -34,7 +34,7 @@ void Window::Render()
 {
     SDL_RenderPresent(canvas);
 }
-void Window::Input(int& directionx, int& directiony, bool& click, int& mouseX, int &mouseY)
+void Window::Input(int& directionx, int& directiony, bool& click)
 {
 
     const Uint8* keys = SDL_GetKeyboardState(NULL);
@@ -65,8 +65,6 @@ void Window::Input(int& directionx, int& directiony, bool& click, int& mouseX, i
     SDL_Event e;
     while (SDL_PollEvent(&e))
     {
-        mouseX = e.motion.x;
-        mouseY = e.motion.y;
         if (e.button.type == SDL_MOUSEBUTTONDOWN)
         {
             click = true;
@@ -85,12 +83,12 @@ SDL_Renderer* Window::GetCanvas()
     return canvas;
 }
 
-void Window::RenderTexture(Image* image, int x, int y, float angle)
+void Window::RenderTexture(Image* image, int x, int y)
 {
     SDL_Rect dest;
     dest.x = x;
     dest.y = y;
     dest.w = image->GetWidth();
     dest.h = image->GetHeight();
-    SDL_RenderCopyEx(canvas, image->GetTexture(), NULL, &dest, angle, NULL, SDL_FLIP_NONE);
+    SDL_RenderCopy(canvas, image->GetTexture(), NULL, &dest);
 }

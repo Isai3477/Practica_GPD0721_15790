@@ -10,5 +10,5 @@ private:
 
 public:
 	void Init();
-	void Draw(int mouseX, int mouseY);
+	void Draw();
 };

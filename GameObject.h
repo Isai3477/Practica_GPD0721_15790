@@ -4,6 +4,5 @@ class GameObject
 {
 public:
 	Vector2 position;
-	Vector2 forward;
 };
 

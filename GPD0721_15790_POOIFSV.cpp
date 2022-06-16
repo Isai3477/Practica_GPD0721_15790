@@ -16,8 +16,6 @@ int main(int argc, char* args[])
     p1.Init();
     int dirx;
     int diry;
-    int mouseX;
-    int mouseY;
     bool click = false;
     std::vector<Bullet> bullets;
     std::chrono::steady_clock clock;
@@ -31,7 +29,7 @@ int main(int argc, char* args[])
         spawner.EnemySpawner(deltaTime);
         window->Clear();
         lastClick = click;
-        window->Input(dirx, diry, click, mouseX, mouseY);
+        window->Input(dirx, diry, click);
         if (diry > 0 && p1.position.y > -10)
         {
             p1.position.y -= 0.3;
@@ -71,7 +69,7 @@ int main(int argc, char* args[])
             spawner.enemies[i]->Update(p1.position);
         }
         
-        p1.Draw(mouseX, mouseY);
+        p1.Draw();
         window->Render();
 
         auto end = clock.now();  
