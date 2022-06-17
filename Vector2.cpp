@@ -57,3 +57,18 @@ Vector2 Vector2::Unit()
     return unit;
 }
 
+float  Vector2::operator*(Vector2 b2)
+{
+    float  mult;
+    mult = x * b2.x + y * b2.y;
+    return mult;
+}
+
+Vector2::Vector2() {
+    x = 0;
+    y = 0;
+}
+Vector2::Vector2(float x, float y) {
+    this->x = x;
+    this->y = y;
+}

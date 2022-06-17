@@ -1,11 +1,49 @@
-﻿  GPD0721_15790_POOIFSV.cpp
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(35,33): warning C4305: '-=': truncamiento de 'double' a 'float'
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(39,33): warning C4305: '+=': truncamiento de 'double' a 'float'
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(43,33): warning C4305: '+=': truncamiento de 'double' a 'float'
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(47,33): warning C4305: '-=': truncamiento de 'double' a 'float'
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(53,57): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(53,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(57,27): warning C4018: '<': no coinciden signed/unsigned
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(62,27): warning C4018: '<': no coinciden signed/unsigned
-D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(67,27): warning C4018: '<': no coinciden signed/unsigned
-  GPD0721_15790_POOIFSV.vcxproj -> D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Debug\GPD0721_15790_POOIFSV.exe
+﻿  Enemy.cpp
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Spawner.h(14,14): error C2065: 'Enemy': identificador no declarado
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Spawner.h(14,20): error C2059: error de sintaxis: '>'
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(11,15): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(12,15): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(20,52): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(20,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(27,36): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(44,14): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(46,14): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(62,52): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Enemy.cpp(62,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  GPD0721_15790_POOIFSV.cpp
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Spawner.h(14,14): error C2065: 'Enemy': identificador no declarado
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Spawner.h(14,20): error C2059: error de sintaxis: '>'
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(41,48): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(42,45): warning C4244: '-=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(47,48): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(48,45): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(52,48): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(53,45): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(57,48): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(58,45): warning C4244: '-=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(64,55): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(64,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(68,27): warning C4018: '<': no coinciden signed/unsigned
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(90,35): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(90,29): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(90,23): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\GPD0721_15790_POOIFSV.cpp(90,17): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+  Player.cpp
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Spawner.h(14,14): error C2065: 'Enemy': identificador no declarado
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Spawner.h(14,20): error C2059: error de sintaxis: '>'
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(14,19): warning C4305: '=': truncamiento de 'double' a 'float'
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(16,19): warning C4305: '=': truncamiento de 'double' a 'float'
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(21,32): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(21,24): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(25,14): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(28,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(28,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(34,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(35,18): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(36,16): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(37,16): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(68,15): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(70,15): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(86,50): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\isai1\Documents\Programación Orientada a Objetos I\Practica_GPD0721_15790\Player.cpp(86,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Generando código...

@@ -16,9 +16,9 @@ public:
 	void Init();
 	void Clear();
 	void Render();
-	void Input(int& directionx, int& directiony, bool& click);
+	void Input(int& directionX, int& directionY, bool& click, int& mouseX, int& mouseY, int& velocidadx, int& velocidady, int& aceleracionx, int& aceleraciony);
 	SDL_Renderer* GetCanvas();
-	void RenderTexture(Image* image, int x, int y);
+	void RenderTexture(Image* image, int x, int y, float angle = 0);
 
 };
 

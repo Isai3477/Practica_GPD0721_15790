@@ -10,11 +10,10 @@ private:
 	double time;
 
 public:
-
-	std::vector <Enemy*> enemies;
+	//Aquí me marca el error de sintaxis pero ya lo revisamos y lo volvimos a hacer pero sigue saliendo el error
+	std::vector<Enemy*> enemies;
 	Spawner(int widthScreen, int heightScreen);
 	void EnemySpawner(double deltaTime);
 	void CreateEnemy();
-
 };
 

@@ -15,65 +15,79 @@ int main(int argc, char* args[])
     Player p1;
     p1.Init();
     int dirx;
-    int diry;
+    int mouseX;
+    int mouseY;
+    int velx;
+    int vely;
+    int acex;
+    int acey;
     bool click = false;
-    std::vector<Bullet> bullets;
+    int diry;
+    std::vector<Bullet*> bullets;
     std::chrono::steady_clock clock;
     double deltaTime = 0;
     Spawner spawner(1280, 720);
     bool lastClick = false;
 
     while (true)
-    {     
+    {
         auto start = clock.now();
         spawner.EnemySpawner(deltaTime);
         window->Clear();
         lastClick = click;
-        window->Input(dirx, diry, click);
+        window->Input(dirx, diry, click, mouseX, mouseY, velx, vely, acex, acey);
         if (diry > 0 && p1.position.y > -10)
         {
-            p1.position.y -= 0.3;
+            p1.velocidad.y += p1.aceleracion.y * (1.0 / 60.0);
+            p1.position.y -= p1.velocidad.y * (1.0 / 60.0);
+
         }
         else if (diry < 0 && p1.position.y < 630)
         {
-            p1.position.y += 0.3;
+            p1.velocidad.y += p1.aceleracion.y * (1.0 / 60.0);
+            p1.position.y += p1.velocidad.y * (1.0 / 60.0);
         }
         if (dirx > 0 && p1.position.x < 1180)
         {
-            p1.position.x += 0.3;
+            p1.velocidad.x += p1.aceleracion.x * (1.0 / 60.0);
+            p1.position.x += p1.velocidad.x * (1.0 / 60.0);
         }
         else if (dirx < 0 && p1.position.x > 0)
         {
-            p1.position.x -= 0.3;
+            p1.velocidad.x += p1.aceleracion.x * (1.0 / 60.0);
+            p1.position.x -= p1.velocidad.x * (1.0 / 60.0);
         }
 
         if (click && !lastClick)
         {
-            Bullet newBullet;
-            newBullet.Init(p1.position.x+45, p1.position.y);
+            Bullet* newBullet = new Bullet();
+            newBullet->Init(p1.position.x, p1.position.y);
             bullets.push_back(newBullet);
-        }     
+        }
 
         for (int i = 0; i < bullets.size(); i++)
         {
-            bullets[i].Draw();
+            bullets[i]->Draw();
         }
 
         for (int i = 0; i < spawner.enemies.size(); i++)
         {
             spawner.enemies[i]->Draw();
+            spawner.enemies[i]->CheckColisions(bullets);     
+            
         }
 
         for (int i = 0; i < spawner.enemies.size(); i++)
         {
             spawner.enemies[i]->Update(p1.position);
         }
-        
-        p1.Draw();
+        p1.CheckColisions(spawner.enemies);
+        p1.Draw(mouseX, mouseY);
         window->Render();
 
-        auto end = clock.now();  
+        auto end = clock.now();
         auto time_span = static_cast<std::chrono::duration<double>>(end - start);
+        p1.acel(10.0, 10.0, 10.0, 10.0);
 
         deltaTime = time_span.count();
 

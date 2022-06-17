@@ -14,3 +14,14 @@ void Bullet::Draw()
 	Window* window = Window::GetPtr();
 	window->RenderTexture(&img, position.x, position.y);
 }
+
+int Bullet::GetWidth()
+{
+	return img.GetWidth();
+}
+
+int Bullet::GetHeigth()
+{
+	return img.GetHeight();
+}
+

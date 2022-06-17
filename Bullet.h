@@ -12,4 +12,6 @@ private:
 public:
 	void Init(int _x, int _y);
 	void Draw();
+	int GetWidth();
+	int GetHeigth();
 };
